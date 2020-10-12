@@ -7,6 +7,7 @@ You could find it difficult or cumberstone to install and configure. And suprisi
 So here it is, a fully functional keycloak cloudformation ready to go live.
 
 Features:
+- a keycloak v11.0.2
 - an ubuntu 20.04 LTS ami 
 - an external dns name registered on route53
 - an https public endpoint based on your ssl certificate (through aws certificate manager)
