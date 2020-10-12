@@ -1,1 +1,24 @@
 # keycloak
+
+If you're looking into the open source Identity and Access Management ecosystem, chances are that you're found keycloak.
+
+You could find it difficult or cumberstone to install and configure.
+
+Either way here is a fully functional keycloak cloudformation ready to go live.
+
+Features:
+- an ubuntu 20.04LTS ami
+- an external dns name registered on route53
+- an https public endpoint based on your ssl certificate (through aws certificate manager)
+- an http public endpoint that redirect to the https one
+- multiples keycloak instances behind and ALB, working as a wildfly cluster with nodes that are autodiscovered (JDBC_PING)
+- mysql 5.6 aurora DB in a cluster
+
+
+Prerequisites:
+- only the eu-west-3 ubutu 20.04 LTS ami is set, if you're using another region, add it
+- it assumes that your aws internal network is in the 10.0.0.0/8 network, if not adapt the InstanceSecurityGroup
+
+
+Be careful:
+- there's no ip filtering for the external https access, please adapt the ALBSecurityGroup to only accept your public ip address
