@@ -9,7 +9,7 @@ So here it is, a fully functional keycloak cloudformation ready to go live.
 Features:
 - a keycloak v11.0.2
 - an ubuntu 20.04 LTS ami 
-- an external dns name registered on route53
+- an external dns name registered on your domain on route53 
 - an https public endpoint based on your ssl certificate (through aws certificate manager)
 - an http public endpoint that redirect to the https one
 - multiples keycloak instances behind an ALB, working as a wildfly cluster with autodiscovered nodes (JDBC_PING)
@@ -23,6 +23,5 @@ Prerequisites:
 
 Be careful:
 - there's no ip filtering for the external https access, please adapt the ALBSecurityGroup to only accept your public ip address
-
 
 Hope that this will be helpful
