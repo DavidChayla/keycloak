@@ -16,7 +16,7 @@ Features:
 
 
 Prerequisites:
-- only the eu-west-3 ubutu 20.04 LTS ami is set, if you're using another region, add it
+- only the eu-west-3 ubuntu 20.04 LTS ami is set, if you're using another region, add it in AWSRegionArch2AMI
 - it assumes that your aws internal network is in the 10.0.0.0/8 network, if not adapt the InstanceSecurityGroup
 
 
